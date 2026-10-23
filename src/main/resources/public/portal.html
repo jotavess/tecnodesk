@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="Solicite atendimento de assistência técnica, manutenção, software, redes e suporte com a TecnoDesk.">
+  <title>Solicitar atendimento e orçamento | TecnoDesk 8.0</title>
+  <link rel="stylesheet" href="/portal.css">
+  <script src="/portal.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="TecnoDesk início"><span class="brand-mark">T<span>.</span></span><span><strong>tecno<span class="brand-dot">desk.</span></strong><small>ASSISTÊNCIA & SOLUÇÕES DIGITAIS</small></span></a>
+    <nav class="top-nav" aria-label="Navegação principal"><a href="#servicos">Serviços</a><a href="#como-funciona">Como funciona</a><a class="nav-cta" href="#solicitar">Solicitar atendimento <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> ATENDIMENTO TÉCNICO E SOLUÇÕES DIGITAIS</div>
+        <h1>Seu problema técnico.<br><span>Nossa próxima solução.</span></h1>
+        <p>Abra uma solicitação online para manutenção de computadores, software, redes ou suporte. Conte o que está acontecendo e entraremos em contato para entender o próximo passo.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#solicitar">Fazer uma solicitação <span>→</span></a><a class="button button-ghost" href="#servicos">Conhecer os serviços</a></div>
+        <div class="hero-trust"><span class="trust-icon">✓</span><span><strong>Solicitação registrada diretamente</strong><small>Seu chamado entra no sistema de atendimento TecnoDesk.</small></span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="art-glow"></div><div class="tech-card card-main"><div class="card-top"><span class="tiny-dot"></span><span class="tiny-dot"></span><span class="tiny-dot"></span><span class="card-label">CENTRAL DE ATENDIMENTO</span></div><div class="monitor-icon"><span></span><i></i></div><div class="card-line line-long"></div><div class="card-line line-short"></div><div class="card-status"><span class="status-pulse"></span> pronto para receber sua solicitação</div></div>
+        <div class="floating-card float-one"><span class="float-icon">⌘</span><span><strong>Software & sistemas</strong><small>Configuração e suporte</small></span></div>
+        <div class="floating-card float-two"><span class="float-icon blue-icon">⌁</span><span><strong>Assistência técnica</strong><small>Diagnóstico e manutenção</small></span></div>
+      </div>
+    </section>
+
+    <section class="services-section" id="servicos">
+      <div class="section-heading"><div><div class="eyebrow">COMO PODEMOS AJUDAR</div><h2>Suporte para o que<br><span>mantém você funcionando.</span></h2></div><p>Escolha a área mais próxima da sua necessidade. Você poderá detalhar o problema no formulário.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><span class="service-icon">⌘</span><h3>Assistência técnica</h3><p>Diagnóstico, manutenção e reparo de computadores e periféricos.</p><button type="button" data-service="Assistência técnica / manutenção">Solicitar serviço <span>↗</span></button></article>
+        <article class="service-card"><span class="service-icon">▣</span><h3>Software e sistemas</h3><p>Instalação, configuração, manutenção e apoio em sistemas.</p><button type="button" data-service="Software e sistemas">Solicitar serviço <span>↗</span></button></article>
+        <article class="service-card"><span class="service-icon">⌁</span><h3>Redes e infraestrutura</h3><p>Conectividade, configuração de rede e infraestrutura básica.</p><button type="button" data-service="Redes e infraestrutura">Solicitar serviço <span>↗</span></button></article>
+        <article class="service-card"><span class="service-icon">◉</span><h3>Suporte e consultoria</h3><p>Orientação técnica, suporte remoto e análise de necessidades.</p><button type="button" data-service="Suporte técnico">Solicitar serviço <span>↗</span></button></article>
+      </div>
+    </section>
+
+    <section class="request-section" id="solicitar">
+      <div class="request-intro"><div class="eyebrow">ABERTURA DE CHAMADO</div><h2>Conte pra gente<br><span>o que você precisa.</span></h2><p>Preencha o formulário com seus dados de contato e descreva sua necessidade. Sua solicitação será encaminhada para a central TecnoDesk.</p>
+        <div class="steps" id="como-funciona"><div class="step"><span>01</span><div><strong>Você envia</strong><small>Informe seus dados e o serviço desejado.</small></div></div><div class="step"><span>02</span><div><strong>Registramos o chamado</strong><small>O pedido entra na fila interna de atendimento.</small></div></div><div class="step"><span>03</span><div><strong>Entramos em contato</strong><small>Combinamos informações, prazo e próximos passos.</small></div></div></div>
+        <div class="privacy-note"><span class="privacy-icon">◇</span><p><strong>Seus dados são usados para responder ao pedido.</strong><br>Não informe senhas, códigos de acesso ou dados de pagamento neste formulário.</p></div>
+      </div>
+      <div class="form-card">
+        <div class="form-card-heading"><div><span class="form-step-label">FORMULÁRIO DE SOLICITAÇÃO</span><h3>Nova solicitação</h3></div><span class="secure-label">⌑ Conexão segura</span></div>
+        <div class="form-alert hidden" id="formAlert" role="alert"></div>
+        <form id="requestForm" novalidate>
+          <div class="form-section-title"><span>01</span><div><strong>Sobre você</strong><small>Como devemos identificar o solicitante?</small></div></div>
+          <div class="field-grid">
+            <div class="field full"><label for="personType">Você está solicitando como? <b>*</b></label><div class="choice-row"><label class="choice"><input type="radio" name="personType" value="PF" checked><span><strong>Pessoa física</strong><small>Cliente individual</small></span></label><label class="choice"><input type="radio" name="personType" value="PJ"><span><strong>Empresa</strong><small>Pessoa jurídica</small></span></label></div></div>
+            <div class="field full"><label for="name">Nome completo <b>*</b></label><input id="name" name="name" type="text" maxlength="120" autocomplete="name" placeholder="Seu nome completo" required></div>
+            <div class="field full business-field hidden"><label for="tradeName">Nome fantasia (opcional)</label><input id="tradeName" name="tradeName" type="text" maxlength="160" autocomplete="organization" placeholder="Nome comercial da empresa"></div>
+            <div class="field full business-field hidden"><label for="contactName">Pessoa de contato</label><input id="contactName" name="contactName" type="text" maxlength="120" autocomplete="name" placeholder="Quem podemos procurar? (opcional)"></div>
+            <div class="field"><label for="phone">Telefone / WhatsApp <b>*</b></label><input id="phone" name="phone" type="tel" maxlength="40" autocomplete="tel" placeholder="(00) 00000-0000" required></div>
+            <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" maxlength="160" autocomplete="email" placeholder="voce@exemplo.com"></div>
+          </div>
+
+          <div class="form-divider"></div>
+          <div class="form-section-title"><span>02</span><div><strong>Sobre o serviço</strong><small>Explique o que precisa ser resolvido.</small></div></div>
+          <div class="field-grid">
+            <div class="field full"><label for="publicServiceId">Serviço desejado <b>*</b></label><select id="publicServiceId" name="serviceId" required><option value="">Carregando tabela de serviços…</option></select><small>O valor estimado é calculado com a tabela inicial de preços e será validado antes da cobrança.</small></div>
+            <div class="field full hidden" id="quantityField"><label id="quantityLabel" for="serviceQuantity">Quantidade / horas</label><input id="serviceQuantity" name="quantity" type="number" min="1" max="20" step="1" value="1"><small id="quantityHelp">Informe a quantidade para calcular o valor estimado.</small></div>
+            <div class="field full"><div class="price-estimate-card" id="priceEstimateCard"><div><span class="estimate-overline">ORÇAMENTO INICIAL ESTIMADO</span><strong id="publicEstimateAmount">Selecione um serviço</strong></div><p id="publicEstimateDetails">A estimativa não é uma proposta final. Você receberá contato para validar o escopo, valores e disponibilidade.</p></div></div>
+            <div class="field"><label for="serviceType">Área de atendimento</label><select id="serviceType" name="serviceType" required><option value="Assistência técnica / manutenção">Assistência técnica / manutenção</option><option value="Software e sistemas">Software e sistemas</option><option value="Redes e infraestrutura">Redes e infraestrutura</option><option value="Suporte técnico">Suporte técnico</option><option value="Consultoria">Consultoria</option><option value="Outro">Outro</option></select><small>Preenchida automaticamente pelo serviço escolhido.</small></div>
+            <div class="field"><label for="serviceMode">Modalidade desejada <b>*</b></label><select id="serviceMode" name="serviceMode" required><option value="A combinar">A combinar</option><option value="Presencial">Presencial</option><option value="Remoto">Remoto</option></select></div>
+            <div class="field full"><label for="title">Assunto do chamado <b>*</b></label><input id="title" name="title" type="text" minlength="4" maxlength="160" placeholder="Ex.: Computador não inicia" required></div>
+            <div class="field full"><label for="description">Descreva a necessidade <b>*</b></label><textarea id="description" name="description" minlength="15" maxlength="3000" rows="5" placeholder="Conte o que está acontecendo, qual equipamento ou sistema está envolvido e quando o problema começou..." required></textarea><div class="field-foot"><small>Não inclua senhas nem códigos de autenticação.</small><small id="descriptionCount">0 / 3000</small></div></div>
+            <div class="field"><label for="city">Cidade (opcional)</label><input id="city" name="city" maxlength="100" autocomplete="address-level2" placeholder="Sua cidade"></div>
+            <div class="field"><label for="state">Estado (UF)</label><input id="state" name="state" maxlength="2" autocomplete="address-level1" placeholder="RO"></div>
+            <div class="field full"><label for="address">Endereço, se o atendimento for presencial (opcional)</label><input id="address" name="address" maxlength="180" autocomplete="street-address" placeholder="Rua, número e bairro"></div>
+            <div class="field"><label for="contactPreference">Como prefere contato? <b>*</b></label><select id="contactPreference" name="contactPreference" required><option value="WhatsApp">WhatsApp</option><option value="Telefone">Telefone</option><option value="E-mail">E-mail</option><option value="Sem preferência">Sem preferência</option></select></div>
+          </div>
+          <div class="honeypot" aria-hidden="true"><label for="website">Não preencha este campo</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
+          <label class="consent"><input type="checkbox" id="consent" name="consent" required><span>Autorizo o uso destes dados para entrar em contato e tratar desta solicitação. <b>*</b></span></label>
+          <div class="form-actions"><p><span>*</span> Campos obrigatórios</p><button class="button button-primary submit-button" type="submit" id="submitButton">Enviar solicitação <span>→</span></button></div>
+          <p class="form-footnote">O envio registra uma solicitação para análise; não confirma automaticamente orçamento, disponibilidade ou prazo de atendimento.</p>
+        </form>
+        <section class="success-panel hidden" id="successPanel" aria-live="polite"><div class="success-mark">✓</div><span class="form-step-label">SOLICITAÇÃO ENVIADA</span><h3>Recebemos seu pedido!</h3><p>Sua solicitação foi registrada na central de atendimento. Guarde o número abaixo para referência quando entrar em contato.</p><div class="protocol-box"><small>NÚMERO DO CHAMADO</small><strong id="requestNumber">OS-00000</strong></div><div class="success-estimate"><small>ESTIMATIVA INICIAL</small><strong id="requestEstimate">A confirmar</strong><p id="requestEstimateNote">O valor final depende da validação do escopo. Não faça pagamento antes de receber o orçamento aprovado.</p></div><a class="button button-primary" href="/">Voltar ao início <span>→</span></a><button class="text-button" id="newRequestButton" type="button">Enviar outra solicitação</button></section>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="/"><span class="brand-mark">T<span>.</span></span><span><strong>tecno<span class="brand-dot">desk.</span></strong><small>ASSISTÊNCIA & SOLUÇÕES DIGITAIS</small></span></a><p>Atendimento técnico e soluções digitais.<br><span>O portal registra solicitações para análise da equipe.</span></p><a class="admin-link" href="/painel">Acesso administrativo <span>↗</span></a></footer>
+</body>
+</html>
